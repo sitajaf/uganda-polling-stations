@@ -1,0 +1,14 @@
+*.iml
+.coverage
+*.sqlite3
+*.pyc
+.idea/
+*.log
+dump.rdb
+local_settings.py
+*.DS_Store
+
+# virtualenv
+.Python
+ve
+
