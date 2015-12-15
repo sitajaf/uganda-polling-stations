@@ -1,4 +1,4 @@
-# uganda-Polling-stations register
+# uganda-polling-stations
 A simple python utility tool to covert the uganda polling stations for 2016 general elections from excel to json
 
 
