@@ -1,6 +1,6 @@
 import os
 
-from converter.excel_to_json_converter import ExcelToJsonConverter
+from uganda_voter_register.converter.excel_to_json_converter import ExcelToJsonConverter
 
 
 def convert():

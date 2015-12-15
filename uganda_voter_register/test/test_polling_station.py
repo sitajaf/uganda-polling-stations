@@ -1,7 +1,6 @@
-import unittest
 from unittest import TestCase
 
-from models.polling_station import PollingStation
+from uganda_voter_register.models.polling_station import PollingStation
 
 
 class PollingStationTest(TestCase):

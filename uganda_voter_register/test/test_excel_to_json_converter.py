@@ -1,8 +1,9 @@
 import json
 import unittest
 from unittest import TestCase
-from converter.excel_to_json_converter import ExcelToJsonConverter
-from models.polling_station import PollingStation
+
+from uganda_voter_register.converter.excel_to_json_converter import ExcelToJsonConverter
+from uganda_voter_register.models.polling_station import PollingStation
 
 expectedMiniJson = json.dumps(
     [PollingStation(1, 01, "APAC", 002, "KWANIA COUNTY", 01, "ADUKU", 01, "ADYEDA", 01, "ADYEDA CENTRE").to_dict(),

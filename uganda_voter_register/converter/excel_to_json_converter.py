@@ -1,7 +1,7 @@
 import json
 
-from models.polling_station import PollingStation
 from openpyxl import load_workbook
+from uganda_voter_register.models.polling_station import PollingStation
 
 
 class ExcelToJsonConverter:
