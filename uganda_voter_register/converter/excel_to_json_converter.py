@@ -22,11 +22,7 @@ class ExcelToJsonConverter:
                                                  row[10].value, row[11].value)
                 polling_stations.append(polling_station.to_dict())
 
-        print ('polling_stations: ' % polling_stations)
-
-        dumps = json.dumps(polling_stations)
-        print('json: %s' % dumps)
-        return dumps
+        return json.dumps(polling_stations)
 
     def is_valid(self, row):
         row_values = [cell.value for cell in row]
