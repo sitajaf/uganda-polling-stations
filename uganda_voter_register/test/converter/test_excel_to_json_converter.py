@@ -1,5 +1,4 @@
 import json
-import unittest
 from unittest import TestCase
 
 from uganda_voter_register.converter.excel_to_json_converter import ExcelToJsonConverter
@@ -23,17 +22,13 @@ class ExcelToJsonConverterTest(TestCase):
     def test_should_return_json_file(self):
         converter = ExcelToJsonConverter()
 
-        converted_json = converter.excel_to_json('register_test_mini.xlsx')
+        converted_json = converter.excel_to_json('files/register_test_mini.xlsx')
 
         self.assertEqual(converted_json, expectedMiniJson)
 
     def test_should_return_corrected_json(self):
         converter = ExcelToJsonConverter()
 
-        converted_json = converter.excel_to_json('register_test.xlsx')
+        converted_json = converter.excel_to_json('files/register_test.xlsx')
 
         self.assertEqual(converted_json, expectedJson)
-
-
-if __name__ == '__main__':
-    unittest.main()
