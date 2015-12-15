@@ -1,17 +1,20 @@
-from openpyxl import load_workbook
+import os
+
+from converter.excel_to_json_converter import ExcelToJsonConverter
 
 
 def convert():
-    work_book = load_workbook('register.xlsx')
-    work_book._active_sheet_index = 0
+    converter = ExcelToJsonConverter()
 
-    work_sheet = work_book.active
+    json = converter.excel_to_json('register.xlsx')
 
-    cell = work_sheet.cell('A4')
-    cell2 = work_sheet.cell('E8')
+    if not os.path.exists('dist'):
+        os.makedirs('dist', 0755, True)
 
-    print('content in A4: ', cell.value)
-    print('content in E8: ', cell2.value)
+    with open('register.json', 'w') as _writer:
+        _writer.write(json)
+
+    print 'Conversion completed! Check in register.json in dist :)'
 
 
 convert()
