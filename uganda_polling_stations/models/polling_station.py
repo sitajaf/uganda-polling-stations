@@ -22,16 +22,16 @@ class PollingStation:
 
     def to_dict(self):
         _dict = OrderedDict()
-        _dict["no"] = self.number
-        _dict["distCode"] = self.dist_code
-        _dict["districtName"] = self.district_name
-        _dict["eaCode"] = self.ea_code
-        _dict["eaName"] = self.ea_name
-        _dict["subCountyCode"] = self.sub_county_code
-        _dict["subCountyName"] = self.sub_county_name
-        _dict["parishCode"] = self.parish_code
-        _dict["parishName"] = self.parish_name
-        _dict["psCode"] = self.ps_code
-        _dict["pollingStationName"] = self.ps_name
+        _dict["NO"] = self.number
+        _dict["DIST_CODE"] = self.dist_code
+        _dict["DISTRICT_NAME"] = self.district_name
+        _dict["EA_CODE"] = self.ea_code
+        _dict["EA_NAME"] = self.ea_name
+        _dict["SUB_COUNTY_CODE"] = self.sub_county_code
+        _dict["SUB_COUNTY_NAME"] = self.sub_county_name
+        _dict["PARISH_CODE"] = self.parish_code
+        _dict["PARISH_NAME"] = self.parish_name
+        _dict["PS_CODE"] = self.ps_code
+        _dict["POLLING_STATION_NAME"] = self.ps_name
 
         return _dict
